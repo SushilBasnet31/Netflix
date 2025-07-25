@@ -1,0 +1,209 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+  z-index: -4;
+}
+
+
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: url(/pictures/background.jpg) center center/cover no-repeat;
+  z-index: -2;
+  opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Adjust the opacity here */
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  top: -0.9rem;
+  left: 10rem;
+  height: 8.1rem;
+  width: 14.6rem;
+  padding: 0px;
+}
+
+.sinBtn {
+  position: absolute;
+  top: 1.99rem;
+  right: 13rem;
+  width: 6rem;
+  padding: 0.6rem 0.5rem;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  font-weight: 550;
+  color: white;
+  background-color: rgb(233, 17, 17);
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sinBtn:hover {
+  background-color: rgb(184, 3, 3);
+}
+
+
+
+.intro {
+  position: absolute;
+  color: white;
+  top: 15rem;
+  left: 25rem;
+  width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+
+
+
+}
+
+.intro h1 {
+
+  font-size: 5rem;
+  font-weight: 2000;
+  text-align: center;
+}
+
+.intro h2 {
+  margin-top: 20px;
+}
+
+.intro h3 {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.form {
+  position: absolute;
+  top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.emailholder {
+  position: relative;
+  width: 28rem;
+  height: 4.5rem;
+  padding: 15px;
+  font-size: 1.4rem;
+  /* font-weight: 500; */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 0.5px solid rgb(218, 218, 218);
+  border-radius: 6px;
+}
+
+
+
+
+.getstarted {
+  position: relative;
+  padding: 10px;
+  width: 16rem;
+  height: 4.5rem;
+  background-color: rgb(233, 17, 17);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.hrlines {
+  height: 1rem;
+  background-color: rgba(92, 82, 82, 0.7);
+  border: none;
+}
+
+.title {
+  position: absolute;
+  top: 50rem;
+  left: 48rem;
+  color: white;
+
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+
+  margin-top: 4rem;
+  border: none;
+
+}
+
+.gridmovies {
+  background-color: rgba(22, 19, 19, 0.7);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 7rem;
+  margin-left: 1rem;
+  padding: 3rem;
+  gap: 2rem;
+
+
+
+}
+
+.movie {
+  background-color: rgba(61, 58, 58, 0.7);
+  height: 27rem;
+  width: 22rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: sans-serif;
+  transition:  all 0.3s linear;
+}
+.movie:hover{
+  transform: scale(1.075);
+  cursor: pointer ;
+}
+
+
+
+.pic img {
+  height: 20rem;
+  width: 16rem;
+  border-radius: 0.5rem;
+}
+
+.movie p{
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 10px;
+
+}
